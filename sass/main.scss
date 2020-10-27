@@ -1,9 +1,9 @@
-body {
-	background-color: rgb(86, 236, 124);
-	color: red;
-}
 
-header {
-	color: red;
-	background: green;
-}
+// Configuration
+@import "components/functions";
+@import "components/variables";
+@import "components/mixins";
+@import "components/utilities";
+
+
+
