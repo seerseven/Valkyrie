@@ -1,21 +1,12 @@
-<div class="row">
-  <div class="banner" style="background-image:url('{{ block.settings.image | img_url: 'master' }}')" >
-      <h1 class="page_title">{{ page_title }}</h1>
-  </div>
-</div>
+
+
+{% section 'banner' %}
 
 <div class="container">
-
   <div class="row mx-auto" style="max-width: 1050px">
-
-    <div class="row">
-      <div class="cura cy">
-        {% section 'callout' %}
-      </div>
-    </div>
-
+    {% section 'callout' %}
+    {{ page.content }}
   </div>
-
 </div>
 
 
