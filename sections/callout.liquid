@@ -1,4 +1,5 @@
-
+<h4>{{section.settings.calloutTitle}}</h4>
+<p>{{section.settings.calloutText}}</p>
 {% schema %}
 {
     "name": "Callout",
@@ -6,16 +7,16 @@
 
    "settings": [
       {
-        "id": "title",
+        "id": "calloutTitle",
         "type": "text",
         "label": "Callout Title",
-        "default": "Callout Header"
+        "default": "Enter callout header..."
       },
       {
-        "id": "text",
+        "id": "calloutText",
         "type": "richtext",
         "label": "Callout Text",
-        "default": "Callout Header"
+        "default": "Enter callout text..."
       }
     ]
   }
