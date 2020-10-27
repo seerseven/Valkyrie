@@ -1,0 +1,24 @@
+<h4>{{section.settings.calloutTitle}}</h4>
+<p>{{section.settings.calloutText}}</p>
+{% schema %}
+{
+    "name": "Callout",
+    "class": "callout-section",
+
+   "settings": [
+      {
+        "id": "calloutTitle",
+        "type": "text",
+        "label": "Callout Title",
+        "default": "Enter callout header..."
+      },
+      {
+        "id": "calloutText",
+        "type": "richtext",
+        "label": "Callout Text",
+        "default": "Enter callout text..."
+      }
+    ]
+  }
+
+{% endschema %}
