@@ -29,8 +29,12 @@
   {% include 'social-meta-tags' %}
 
   <!-- CSS ================================================== -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+
   {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
 
+  {{ 'main.scss.css' | asset_url | stylesheet_tag }}
   <!-- Vendors ================================================== -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   
@@ -66,6 +70,8 @@
   {{ content_for_header }}
   
   {{ 'modernizr.min.js' | asset_url | script_tag }}
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
 
   {% comment %}
     If you store has customer accounts disabled, you can remove the following JS file
