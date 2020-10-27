@@ -1,0 +1,65 @@
+$blamp-black: #0c1012;
+$dorian-grey: #14181b;
+$in-vison: #33373b;
+$sith-red: #b8332a;
+$dark-sith: #931810;
+$co-cain: #f8f8f8;
+$mithrandir: #ffffff;
+$thanks: #d28500;
+$success: #118e2c;
+$sun-god: #ffc742;
+
+@mixin sha-sm {
+	-webkit-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.1);
+}
+
+@mixin trans {
+	transition: 0.2s linear;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+}
+
+@mixin soft {
+	border-radius: 2px;
+	border: 1px solid #ccc;
+	border-left-width: 0.25rem;
+}
+
+@mixin cura {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.4);
+	cursor: pointer;
+	padding: 1.25rem;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+	@include trans;
+
+	&:hover {
+		@include sha-sm;
+	}
+}
+
+.cg {
+	@include soft;
+	border-left-color: #57c241;
+}
+
+.cy {
+	@include soft;
+	border-left-color: $sun-god;
+}
+.cb {
+	@include soft;
+	border-left-color: #34cefd;
+}
+.cr {
+	@include soft;
+	border-left-color: $sith-red;
+}
+
+.cl {
+	@include soft;
+	border-left-color: $blamp-black;
+}
