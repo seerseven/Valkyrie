@@ -1,8 +1,8 @@
  <div class="row p-3 mx-auto">
-  <div class="cura" style="border-left-color: {{section.settings.callout_border_color}}">
+  <div class="cura cy" style="border-left-color: {{section.settings.callout_border_color}}">
     <h4>{{section.settings.callout_title}}</h4>
     <p>{{section.settings.callout_text}}</p>
-    <p>{{section.settings.callout_tagline}}</p>
+    <div class="html-text">{{section.settings.html_text}}</div>
   </div>
 </div>
 
@@ -31,10 +31,10 @@
         "default": "Enter callout text..."
       },
       {
-        "type": "text",
-        "id": "callout_tagline",
-        "label": "Callout Tagline",
-        "default": "Enter callout tagline..."
+        "type": "html",
+        "id": "html_text",
+        "label": "HTML",
+        "default": "<p>Custom HTML code goes here</p>"
       }
     ]
   }
