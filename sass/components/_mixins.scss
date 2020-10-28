@@ -64,7 +64,7 @@ $sun-god: #ffc742;
 	border-left-color: $blamp-black;
 }
 
-@mixin page_title {
+@mixin banner {
 	height: 250px;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -78,6 +78,6 @@ $sun-god: #ffc742;
 	}
 }
 
-.page_title {
-	@include page_title;
+.banner {
+	@include banner;
 }
