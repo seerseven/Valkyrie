@@ -1,9 +1,11 @@
+ <div class="row p-3 mx-auto">
+  <div class="cura cy">
+    <h4 style ="color: {{section.settings.callout_color_title}}">{{section.settings.callout_title}}</h4>
+    <p style ="color: {{section.settings.callout_color_text}}">{{section.settings.callout_text}}</p>
+    <p style ="color: {{section.settings.callout_color_tagline}}">{{section.settings.callout_tagline}}</p>
+  </div>
+</div>
 
-
-      <div class="cura cy">
-        <h4>{{section.settings.calloutTitle}}</h4>
-        <p>{{section.settings.calloutText}}</p>
-      </div>
 
 
 {% schema %}
@@ -13,16 +15,40 @@
 
    "settings": [
       {
-        "id": "calloutTitle",
         "type": "text",
+        "id": "callout_title",
         "label": "Callout Title",
-        "default": "Enter callout header..."
+        "default": "Enter callout title..."
       },
       {
-        "id": "calloutText",
+        "type": "color",
+        "id": "callout_title_color",
+        "label": "Title Color",
+        "default": "#000000"
+      },
+      {
         "type": "text",
+        "id": "callout_text",
         "label": "Callout Text",
         "default": "Enter callout text..."
+      },
+      {
+        "type": "color",
+        "id": "callout_text_color",
+        "label": "Text Color",
+        "default": "#000000"
+      },
+      {
+        "type": "text",
+        "id": "callout_tagline",
+        "label": "Callout Tagline",
+        "default": "Enter callout tagline..."
+      },
+      {
+        "type": "color",
+        "id": "callout_tagline_color",
+        "label": "Tagline Color",
+        "default": "#000000"
       }
     ]
   }
