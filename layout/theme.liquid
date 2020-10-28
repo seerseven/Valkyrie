@@ -139,8 +139,10 @@
       {% include 'breadcrumbs' %}
     {% endunless %}
 
-    <main class="main-content" role="main">
-      <div class="{% if template == 'index' or template == 'collection' or template == 'product' or template == 'article' %}wrapper-full
+    <main class="{% if template == 'page.dynamic' or template == 'page.contact' %} main-content-2 
+    {% else %} main-content {% endif %} " role="main">
+
+      <div class="{% if template == 'index' or template == 'page.dynamic' or template == 'page.contact' or template == 'collection' or template == 'product' or template == 'article' %}wrapper-full
                   {% elsif template == 'page.full-width' %}wrapper-fluid
                   {% else %} wrapper{% endif %}">
 
@@ -148,6 +150,7 @@
       </div>
     </main>
 
+    
     {% section 'guarantee' %}  
 
     {% section 'footer' %}
