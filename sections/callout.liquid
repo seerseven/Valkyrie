@@ -1,8 +1,8 @@
  <div class="row p-3 mx-auto">
-  <div class="cura" style=" ">
-    <h4 style ="color: {{section.settings.callout_color_title}}">{{section.settings.callout_title}}</h4>
-    <p style ="color: {{section.settings.callout_color_text}}">{{section.settings.callout_text}}</p>
-    <p style ="color: {{section.settings.callout_color_tagline}}">{{section.settings.callout_tagline}}</p>
+  <div class="cura" style="border-left-color: {{section.settings.callout_border_color}}">
+    <h4>{{section.settings.callout_title}}</h4>
+    <p>{{section.settings.callout_text}}</p>
+    <p>{{section.settings.callout_tagline}}</p>
   </div>
 </div>
 
@@ -22,8 +22,8 @@
       },
       {
         "type": "color",
-        "id": "callout_title_color",
-        "label": "Title Color",
+        "id": "callout_border_color",
+        "label": "Border Color",
         "default": "#000000"
       },
       {
@@ -33,22 +33,10 @@
         "default": "Enter callout text..."
       },
       {
-        "type": "color",
-        "id": "callout_text_color",
-        "label": "Text Color",
-        "default": "#000000"
-      },
-      {
         "type": "text",
         "id": "callout_tagline",
         "label": "Callout Tagline",
         "default": "Enter callout tagline..."
-      },
-      {
-        "type": "color",
-        "id": "callout_tagline_color",
-        "label": "Tagline Color",
-        "default": "#000000"
       }
     ]
   }
