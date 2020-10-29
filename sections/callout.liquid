@@ -1,21 +1,52 @@
-{% if {{ sections.settings.callout_show }} == true %}
-<div class="row p-3 mx-auto">
-	<div
-		class="cura cy"
-		style="border-left-color: {{ section.settings.callout_border_color }}"
-	>
-		<h4>{{ section.settings.callout_title }}</h4>
-		<p>{{ section.settings.callout_text }}</p>
-		<div class="html-text">{{ section.settings.html_text }}</div>
-	</div>
-</div>
-{% endif %} {% schema %} { "name": "Callout Cards", "class": "callout-section",
-"settings": [ { "type": "checkbox", "id": "callout_show", "label": "Show Callout
-Card", "default": true }, { "type": "text", "id": "callout_title", "label":
-"Callout Title", "default": "Enter callout title..." }, { "type": "color", "id":
-"callout_border_color", "label": "Border Color", "default": "#000000" }, {
-"type": "text", "id": "callout_text", "label": "Callout Text", "default": "Enter
-callout text..." }, { "type": "html", "id": "html_text", "label": "HTML",
-"default": "
-<p>Custom HTML code goes here</p>
-" } ], } {% endschema %}
+{% if {{sections.settings.callout_show}} == true %}
+  <div class="row p-3 mx-auto">
+    <div class="cura cy" style="border-left-color: {{section.settings.callout_border_color}}">
+      <h4>{{section.settings.callout_title}}</h4>
+      <p>{{section.settings.callout_text}}</p>
+      <div class="html-text">{{section.settings.html_text}}</div>
+    </div>
+  </div>
+{% endif %}
+
+
+
+{% schema %}
+{
+    "name": "Callout Cards",
+    "class": "callout-section",
+
+   "settings": [
+      {
+        "type": "checkbox",
+        "id": "callout_show",
+        "label": "Show Callout Card",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "callout_title",
+        "label": "Callout Title",
+        "default": "Enter callout title..."
+      },
+      {
+        "type": "color",
+        "id": "callout_border_color",
+        "label": "Border Color",
+        "default": "#000000"
+      },
+      {
+        "type": "text",
+        "id": "callout_text",
+        "label": "Callout Text",
+        "default": "Enter callout text..."
+      },
+      {
+        "type": "html",
+        "id": "html_text",
+        "label": "HTML",
+        "default": "<p>Custom HTML code goes here</p>"
+      }
+    ],
+  }
+
+{% endschema %}
