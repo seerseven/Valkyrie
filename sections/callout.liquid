@@ -1,12 +1,10 @@
 
   <div class="row p-3 mx-auto">
-    {% if sections.settings.callout_show %}
       <div class="cura cy" style="border-left-color: {{section.settings.callout_border_color}}">
         <h4>{{section.settings.callout_title}}</h4>
         <p>{{section.settings.callout_text}}</p>
         <div class="html-text">{{section.settings.html_text}}</div>
       </div>
-    {% endif %}
   </div>
 
 {% schema %}
